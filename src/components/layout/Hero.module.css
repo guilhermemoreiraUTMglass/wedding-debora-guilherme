@@ -1,0 +1,185 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Cover photo ── */
+.coverPhoto {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.coverPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.coverPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(160deg, #2C3520 0%, #3D4A2C 50%, #4A5840 100%);
+}
+.coverOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 40, 20, 0.35) 0%,
+    rgba(30, 40, 20, 0.55) 50%,
+    rgba(20, 28, 15, 0.85) 100%
+  );
+}
+
+/* ── Content ── */
+.heroContent {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 24px 0;
+  gap: 4px;
+}
+
+.initials {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(40px, 10vw, 80px);
+  font-weight: 300;
+  color: white;
+  letter-spacing: 8px;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.heroLeaf {
+  font-size: 20px;
+  filter: brightness(1.4);
+  margin: 2px 0;
+}
+
+.coupleNames {
+  font-size: clamp(26px, 7vw, 52px);
+  font-weight: 400;
+  font-style: italic;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 1.15;
+}
+
+.heroDivider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 6px;
+}
+.heroDividerLine {
+  display: block;
+  width: 48px;
+  height: 1px;
+  background: rgba(255,255,255,0.6);
+}
+.heroDividerHeart {
+  color: white;
+  font-size: 14px;
+}
+
+.weddingDate {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: rgba(255,255,255,0.85);
+  text-transform: uppercase;
+}
+
+/* ── Countdown card ── */
+.countdownCard {
+  position: relative;
+  z-index: 1;
+  margin: 20px 16px 0;
+  background: var(--warm-white);
+  border-radius: 16px 16px 0 0;
+  padding: 24px 16px 12px;
+  text-align: center;
+}
+
+.countdownLabel {
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.countdownHeart {
+  display: block;
+  color: var(--sage);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.countdownGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.countdownDivider {
+  width: 1px;
+  height: 40px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+.countItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0 8px;
+}
+
+.countNum {
+  font-size: clamp(28px, 7vw, 48px);
+  font-weight: 300;
+  color: var(--sage-dark);
+  line-height: 1;
+}
+.countUnit {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* ── Bottom tabs ── */
+.bottomTabs {
+  position: relative;
+  z-index: 1;
+  background: var(--warm-white);
+  display: flex;
+  border-top: 1px solid var(--border);
+  margin: 0 16px;
+}
+.tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 8px 14px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+.tab:hover { color: var(--sage); }
+.tabActive { color: var(--sage) !important; }
+.tabIcon { font-size: 20px; }
+.tabLabel { font-size: 10px; letter-spacing: 1px; }

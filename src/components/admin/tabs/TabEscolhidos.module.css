@@ -1,0 +1,34 @@
+.statsRow { display: flex; gap: 10px; margin-bottom: 20px; }
+.statCard {
+  flex: 1; background: var(--sage-bg); border: 1px solid var(--border);
+  border-radius: 10px; padding: 14px 10px; text-align: center;
+}
+.statNum { display: block; font-family: 'Cormorant Garamond', serif; font-size: 28px; color: var(--sage-dark); font-weight: 500; }
+.statLabel { font-size: 11px; color: var(--text-muted); letter-spacing: 0.5px; }
+
+.empty { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 40px 0; color: var(--text-muted); }
+.empty span { font-size: 36px; }
+.empty p { font-size: 14px; }
+
+.list { display: flex; flex-direction: column; gap: 10px; }
+.item {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: 12px; padding: 12px;
+}
+.itemImg {
+  width: 50px; height: 50px; border-radius: 8px;
+  background: var(--cream); display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; overflow: hidden; font-size: 24px;
+}
+.itemImg img { width: 100%; height: 100%; object-fit: cover; }
+.itemInfo { flex: 1; min-width: 0; }
+.itemName { font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 3px; }
+.itemGuest { font-size: 13px; color: var(--sage); margin-bottom: 2px; }
+.itemDate { font-size: 11px; color: var(--text-muted); }
+.resetBtn {
+  background: var(--cream); border: 1px solid var(--border);
+  width: 34px; height: 34px; border-radius: 8px; font-size: 16px;
+  cursor: pointer; flex-shrink: 0; color: var(--sage);
+}
+.resetBtn:hover { background: var(--sage-bg); }

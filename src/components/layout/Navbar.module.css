@@ -1,0 +1,132 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: rgba(253, 252, 249, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.nav.scrolled {
+  border-bottom-color: var(--border);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--sage-dark);
+  text-decoration: none;
+}
+.logoLeaf { font-size: 14px; }
+.logoText { letter-spacing: 2.5px; }
+
+.hamburger {
+  background: none;
+  border: none;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.giftBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--sage-dark);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 0;
+}
+.giftCount {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--sage-dark);
+  letter-spacing: 0.5px;
+}
+
+/* ── OVERLAY & DRAWER ── */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 200;
+  display: flex;
+}
+
+.drawer {
+  width: min(380px, 88vw);
+  height: 100%;
+  background: var(--warm-white);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  animation: slideIn 0.3s ease;
+}
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}
+
+.drawerHeader {
+  position: relative;
+  background: var(--cream);
+  padding: 48px 24px 32px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.drawerClose {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  padding: 4px;
+}
+
+.drawerCouple { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.drawerAvatar { font-size: 56px; width: 88px; height: 88px; border-radius: 50%; background: var(--warm-white); display: flex; align-items: center; justify-content: center; border: 3px solid var(--border); margin-bottom: 4px; }
+.drawerName { font-size: 22px; font-weight: 500; color: var(--text); letter-spacing: 0.5px; }
+.drawerSub { font-size: 13px; color: var(--text-muted); font-style: italic; font-family: 'Cormorant Garamond', serif; }
+.drawerHeart { font-size: 18px; color: var(--sage); }
+
+.drawerNav { flex: 1; padding: 8px 0; }
+
+.drawerLink {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.drawerLink:hover { background: var(--cream); }
+
+.drawerLinkIcon { font-size: 20px; width: 28px; text-align: center; flex-shrink: 0; }
+.drawerLinkLabel { font-size: 15px; font-weight: 500; color: var(--text); }
+.drawerLinkSub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.drawerArrow { margin-left: auto; color: var(--text-muted); font-size: 20px; }
+
+.drawerFooter {
+  padding: 24px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+.drawerVerse { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: var(--text-muted); line-height: 1.5; }
+.drawerVerseRef { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+.drawerVersion { font-size: 11px; color: var(--border); margin-top: 16px; letter-spacing: 1px; }

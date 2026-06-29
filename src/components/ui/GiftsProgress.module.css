@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin: 0 16px 16px;
+}
+
+.iconWrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--sage);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info { flex-shrink: 0; }
+.label { font-size: 11px; color: var(--text-muted); letter-spacing: 0.3px; margin-bottom: 2px; }
+.count { font-size: 15px; color: var(--text); }
+.count strong { font-weight: 600; }
+
+.progressWrap { flex: 1; min-width: 0; }
+.track { height: 5px; background: var(--border); border-radius: 3px; overflow: hidden; margin-bottom: 5px; }
+.fill { height: 100%; background: var(--sage); border-radius: 3px; transition: width 0.8s ease; }
+.pct { font-size: 12px; color: var(--text-muted); float: right; }

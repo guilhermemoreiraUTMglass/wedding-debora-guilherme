@@ -1,0 +1,148 @@
+.listHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.addBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--sage);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+.addBtn:hover { background: var(--sage-dark); }
+
+/* Gift list */
+.giftList { display: flex; flex-direction: column; gap: 10px; }
+
+.giftItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+}
+.giftChosen { background: #F9F9F9; opacity: 0.8; }
+
+.giftEmoji { font-size: 28px; width: 40px; text-align: center; flex-shrink: 0; }
+
+.giftInfo { flex: 1; min-width: 0; }
+.giftName { font-size: 14px; font-weight: 500; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 4px; }
+.giftMeta { display: flex; gap: 6px; flex-wrap: wrap; }
+
+.statusBadge {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+.badgeAvail { background: #E8F5E9; color: #2E7D32; }
+.badgeChosen { background: #F5F5F5; color: #757575; }
+
+.catBadge {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: var(--sage-bg);
+  color: var(--sage-dark);
+}
+
+.giftActions { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+
+.editBtn, .deleteBtn, .resetBtn {
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s;
+}
+.editBtn { color: var(--sage); }
+.editBtn:hover { background: var(--sage-bg); border-color: var(--sage); }
+.deleteBtn { color: #DC2626; }
+.deleteBtn:hover { background: #FEF2F2; border-color: #FECACA; }
+.resetBtn { color: var(--gold); font-size: 14px; }
+.resetBtn:hover { background: #FFF8E1; border-color: var(--gold); }
+
+.confirmRow { display: flex; gap: 4px; }
+.confirmYes {
+  font-size: 11px; padding: 4px 8px; background: #DC2626; color: white;
+  border: none; border-radius: 6px; font-family: 'Jost', sans-serif;
+}
+.confirmNo {
+  font-size: 11px; padding: 4px 8px; background: var(--border); color: var(--text);
+  border: none; border-radius: 6px; font-family: 'Jost', sans-serif;
+}
+
+/* Form */
+.formHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.backBtn {
+  display: flex; align-items: center; gap: 6px;
+  background: var(--cream); border: 1px solid var(--border);
+  padding: 7px 12px; border-radius: 8px;
+  font-family: 'Jost', sans-serif; font-size: 12px; color: var(--text-muted);
+}
+.formTitle { font-size: 15px; font-weight: 600; color: var(--text); }
+
+.imgPreview {
+  width: 100%; height: 140px; border-radius: 10px; overflow: hidden;
+  border: 1px solid var(--border); margin-bottom: 16px; background: var(--cream);
+  display: flex; align-items: center; justify-content: center;
+}
+.imgPreview img { width: 100%; height: 100%; object-fit: cover; }
+
+.saveBtn {
+  width: 100%;
+  background: var(--sage);
+  color: white;
+  border: none;
+  padding: 13px;
+  border-radius: 10px;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  margin-top: 8px;
+}
+.saveBtn:hover { background: var(--sage-dark); }
+
+.uploadArea {
+  width: 100%;
+  height: 160px;
+  border-radius: 12px;
+  border: 2px dashed var(--sage);
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.uploadPreview { width: 100%; height: 100%; object-fit: cover; }
+.uploadPlaceholder { display: flex; flex-direction: column; align-items: center; gap: 8px; color: var(--text-muted); }
+.uploadPlaceholder span { font-size: 32px; }
+.uploadPlaceholder p { font-size: 13px; }
+.removeImgBtn {
+  width: 100%; background: none; border: 1px solid #FECACA;
+  color: #DC2626; font-size: 12px; padding: 6px; border-radius: 8px;
+  cursor: pointer; font-family: 'Jost', sans-serif; margin-bottom: 8px;
+}
+.giftThumb { width: 40px; height: 40px; border-radius: 6px; object-fit: cover; }

@@ -1,0 +1,104 @@
+.section {
+  background: var(--warm-white);
+  padding: 20px 16px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 20px;
+}
+.cardOrnament { font-size: 18px; text-align: center; margin-bottom: 8px; }
+.cardTitle { font-size: 20px; font-weight: 500; color: var(--text); text-align: center; margin-bottom: 10px; }
+.divider { width: 40px; height: 2px; background: var(--gold); margin: 0 auto 20px; border-radius: 2px; }
+
+.infoGrid { display: flex; flex-direction: column; gap: 16px; }
+.infoItem { display: flex; align-items: flex-start; gap: 14px; }
+.infoIcon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+.infoLabel { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 3px; }
+.infoValue { font-family: 'Cormorant Garamond', serif; font-size: 17px; color: var(--text); white-space: pre-line; }
+.infoSub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+.timeline { display: flex; flex-direction: column; }
+.tlItem { display: grid; grid-template-columns: 52px 24px 1fr; gap: 8px; }
+.tlLast .tlLine { display: none; }
+.tlLeft { text-align: right; padding-top: 2px; }
+.tlYear { font-size: 22px; font-weight: 300; color: var(--sage); }
+.tlDotCol { display: flex; flex-direction: column; align-items: center; }
+.tlDot { width: 10px; height: 10px; border-radius: 50%; background: var(--gold); flex-shrink: 0; margin-top: 6px; }
+.tlLine { flex: 1; width: 1px; background: var(--border); min-height: 32px; margin: 4px 0; }
+.tlRight { padding-bottom: 20px; }
+.tlTitle { font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 4px; }
+.tlDesc { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+.faqs { display: flex; flex-direction: column; gap: 14px; }
+.faqItem {}
+.faqQ { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 4px; }
+.faqA { font-size: 13px; color: var(--text-muted); line-height: 1.6; padding-left: 12px; }
+
+.contactCard {
+  background: var(--sage-dark);
+  border-radius: 16px;
+  padding: 24px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+.contactLabel { font-size: 15px; color: rgba(255,255,255,0.85); }
+.contactBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.contactBtn:hover { background: #1DA851; }
+
+.footer {
+  text-align: center;
+  padding: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.footerLine { width: 80px; height: 1px; background: var(--border); }
+.verse { font-size: 15px; font-style: italic; color: var(--text-muted); line-height: 1.5; max-width: 280px; }
+.verseRef { font-size: 12px; color: var(--text-muted); letter-spacing: 1px; }
+.version { font-size: 11px; color: var(--text-muted); letter-spacing: 1px; margin-top: 4px; opacity: 0.5; }
+
+/* Botão admin — discreto mas visível */
+.adminTrigger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-muted);
+  opacity: 0.6;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-top: 8px;
+  transition: all 0.2s;
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 1px;
+}
+.adminTrigger:hover {
+  opacity: 1;
+  border-color: var(--sage);
+  color: var(--sage);
+}
